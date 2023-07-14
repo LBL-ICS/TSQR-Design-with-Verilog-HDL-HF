@@ -1,0 +1,134 @@
+#!/bin/csh -f
+################################################################################
+# simulation top mcript
+# change modelsim in this file dir and run "do this_file.do"
+# project dir ---+---> hdl source dir
+#                +---> sim mcript dir
+#
+################################################################################
+
+# check if current dir has modelsim config file
+set has_config  [file exists modelsim.do]
+# config modelsim 
+if {$has_config==1} { do modelsim.do  ; }
+
+echo "+====================================="
+echo "| Creat Lib Work soc                  "
+echo "+====================================="
+vlib work
+vmap work work 
+
+echo "+====================================="
+echo "| Complile RTL Code of soc            "
+echo "+====================================="
+vlog +define+SINGLE_CORE\
+     +define+ST_WIDTH_16\
+     +define+ST16_RANDOM_TEST_16X8\
+     -f ../filelist/filelist_st16.f  
+     #+define+ST16_RANDOM_TEST_16X8\
+     #+define+ST16_RANDOM_TEST_24X8\
+     #+define+ST16_RANDOM_TEST_32X8\
+
+echo "+====================================="
+echo "| Compiler Pass                       "
+echo "| Being to Run Simulation             "
+echo "+====================================="
+vsim -voptargs=+acc=npr work.tsqr_mc_st16_tb -t 1ns
+
+###################################### mus  ####################################
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/clk        
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/rst        
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/tsqr_en    
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/tile_no    
+
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_hh_cnt     
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_mx_cnt     
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_mem0_fi       
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_mem1_fi       
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_tsqr_fi       
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/tsqr_fi       
+
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tr_cnt
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tr_cy
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/hh_fi
+
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d1_rdy
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d1_vld
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_st
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_dina 
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/ddot_din_a
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/ddot_din_b
+
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d2_rdy
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d2_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/vk1_rdy
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/ddot_din_a
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/ddot_din_b
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh0_din_rdy
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh1_din_rdy
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_din_update
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_din
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_st
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/mem0_fi
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/mem1_fi
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_dout_update
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_din_reg
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d1
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/hh_dout
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/rtri_mem_dina
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/dmx0_mem_dina
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/vk1_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d3_rdy
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d3_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tk_rdy
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tk_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d4_rdy
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d4
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d4_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d5_rdy
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/vk
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d1_rdy
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d3_rdy
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d4_rdy
+add wave -position insertpoint sim:/tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/hh_din
+add wave -position insertpoint /tsqr_mc_st16_tb/u_tsqr_mc/u1_hh_core/u_hh_datapath/d5
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d5_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/yjp_rdy
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/yjp_vld
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/yj_sft
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/d4_sft
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/wr_mem_st
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/mem0_fi
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/mem1_fi
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tsqr_fi
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/cnt
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/tr_cnt
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/wr_mem_st
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/rd_mem_st
+add wave -position insertpoint -color yellow /tsqr_mc_st16_tb/u_tsqr_mc/u1_fsm/hh_fi
+
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_ena  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_wea  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_addra
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_dina 
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_enb  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_addrb
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx0_mem_doutb
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_ena  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_wea  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_addra
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_dina 
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_enb  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_addrb
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_dmx1_mem_doutb
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_ena  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_wea  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_addra
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_dina 
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_enb  
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_addrb
+add wave -noupdate -format logic -unsigned tsqr_mc_st16_tb/u_tsqr_mc/c1_rtri_mem_doutb
+
+#run 2 us                                                                            
+run 2000 us                                                                            
+

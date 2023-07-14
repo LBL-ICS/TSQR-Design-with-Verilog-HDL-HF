@@ -1,0 +1,48 @@
+==========================================
+Quad-core Simulation
+Test case: ST16_RANDOM_TEST_64X8
+==========================================
+===============================          0 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.783691%, golden result: 4.556808, dut result: 4.521097
+===============================          1 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.781167%, golden result: 0.372655, dut result: 0.369744
+Item1   Comp Pass! error percent: 0.586149%, golden result: 4.566143, dut result: 4.539378
+===============================          2 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.436263%, golden result: 0.484700, dut result: 0.482585
+Item1   Comp Pass! error percent: 2.390639%, golden result: 0.305220, dut result: 0.297923
+Item2   Comp Pass! error percent: 1.177595%, golden result: 4.311838, dut result: 4.261062
+===============================          3 Column Results    ======================================
+Item0   Comp Pass! error percent: 1.171405%, golden result: 0.215707, dut result: 0.213180
+Item1   Comp Pass! error percent: 0.870785%, golden result: 0.441567, dut result: 0.437721
+Item2   Comp Pass! error percent: 1.671895%, golden result: 1.040666, dut result: 1.023267
+Item3   Comp Pass! error percent: 0.480613%, golden result: 4.659605, dut result: 4.637210
+===============================          4 Column Results    ======================================
+Item0   Comp Pass! error percent: 1.622396%, golden result: 0.176027, dut result: 0.173171
+Item1   Comp Pass! error percent: 0.558830%, golden result: 0.081487, dut result: 0.081031
+Item2   Comp Pass! error percent: 1.039803%, golden result: 1.211132, dut result: 1.198539
+Item3   Comp Pass! error percent: 0.970504%, golden result: 0.121503, dut result: 0.120324
+Item4   Comp Pass! error percent: 1.242443%, golden result: 4.368259, dut result: 4.313986
+===============================          5 Column Results    ======================================
+Item0   Comp Pass! error percent: 1.187099%, golden result: 0.361236, dut result: 0.356948
+Item1   Comp Pass! error percent: 0.324055%, golden result: 0.486156, dut result: 0.484580
+Item2   Comp Pass! error percent: 1.058801%, golden result: 0.687372, dut result: 0.680094
+Item3   Comp Pass! error percent: 1.140568%, golden result: 0.110046, dut result: 0.108791
+Item4   Comp Pass! error percent: 0.797083%, golden result: 1.152830, dut result: 1.143641
+Item5   Comp Pass! error percent: 1.210138%, golden result: 4.392313, dut result: 4.339160
+===============================          6 Column Results    ======================================
+Item0   Comp FAIL! error percent: 8.127307%, golden result: 0.069911, dut result: 0.064229
+Item1   Comp Pass! error percent: 0.896189%, golden result: 1.002704, dut result: 0.993718
+Item2   Comp Pass! error percent: 0.100689%, golden result: 0.122937, dut result: 0.123060
+Item3   Comp Pass! error percent: 1.895911%, golden result: 0.358836, dut result: 0.352033
+Item4   Comp Pass! error percent: 2.249526%, golden result: 0.307178, dut result: 0.300268
+Item5   Comp Pass! error percent: 2.023840%, golden result: 0.540251, dut result: 0.529317
+Item6   Comp Pass! error percent: 0.868338%, golden result: 4.515286, dut result: 4.476079
+===============================          7 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.182839%, golden result: 0.258270, dut result: 0.258742
+Item1   Comp Pass! error percent: 0.911321%, golden result: 0.928236, dut result: 0.919777
+Item2   Comp Pass! error percent: 1.530031%, golden result: 1.304684, dut result: 1.284722
+Item3   Comp Pass! error percent: 0.516130%, golden result: 0.851948, dut result: 0.847550
+Item4   Comp Pass! error percent: 0.582162%, golden result: 0.394443, dut result: 0.396739
+Item5   Comp Pass! error percent: 0.790770%, golden result: 0.388055, dut result: 0.384987
+Item6   Comp Pass! error percent: 0.903155%, golden result: 0.434637, dut result: 0.430711
+Item7   Comp Pass! error percent: 1.393081%, golden result: 4.355737, dut result: 4.295058

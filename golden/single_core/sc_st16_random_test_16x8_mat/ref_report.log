@@ -1,0 +1,128 @@
+====================================          0 Round Householder=============================================i
+-------------------------D1 (          0 index)---------------------------------------
+Comparison Pass! error percent: 0.000018%, golden result: 7.984959, dut result: 7.984957
+IEEE 754 Format! golden result: 40ff84c8, dut result: 40ff84c5
+-------------------------D2 (          1 index)---------------------------------------
+Comparison Pass! error percent: 0.177167%, golden result: 2.825767, dut result: 2.820760
+IEEE 754 Format! golden result: 4034d95d, dut result: 40348757
+------------------------VK1 (          0 index)---------------------------------------
+Comparison Pass! error percent: 0.144898%, golden result: 3.455214, dut result: 3.450208
+IEEE 754 Format! golden result: 405d223b, dut result: 405cd034
+-------------------------D3 (          0 index)---------------------------------------
+Comparison Pass! error percent: 0.177077%, golden result: 19.527262, dut result: 19.492683
+IEEE 754 Format! golden result: 419c37d5, dut result: 419bf104
+-------------------------TK (          0 index)---------------------------------------
+Comparison Pass! error percent: 0.165669%, golden result: -0.102421, dut result: -0.102591
+IEEE 754 Format! golden result: bdd1c20e, dut result: bdd21b04
+====================================          1 Round Householder=============================================i
+-------------------------D1 (          1 index)---------------------------------------
+Comparison Pass! error percent: 0.021757%, golden result: 5.231488, dut result: 5.230350
+IEEE 754 Format! golden result: 40a76859, dut result: 40a75f06
+-------------------------D2 (          2 index)---------------------------------------
+Comparison Pass! error percent: 0.243970%, golden result: 2.287245, dut result: 2.281664
+IEEE 754 Format! golden result: 40126237, dut result: 401206ca
+------------------------VK1 (          1 index)---------------------------------------
+Comparison Pass! error percent: 0.206323%, golden result: 2.906581, dut result: 2.900584
+IEEE 754 Format! golden result: 403a056b, dut result: 4039a32a
+-------------------------D3 (          1 index)---------------------------------------
+Comparison Pass! error percent: 0.266605%, golden result: 13.296121, dut result: 13.260673
+IEEE 754 Format! golden result: 4154bce9, dut result: 41542bb7
+-------------------------TK (          1 index)---------------------------------------
+Comparison Pass! error percent: 0.260548%, golden result: -0.150420, dut result: -0.150812
+IEEE 754 Format! golden result: be1a07a7, dut result: be1a6e64
+====================================          2 Round Householder=============================================i
+-------------------------D1 (          2 index)---------------------------------------
+Comparison Pass! error percent: 0.012897%, golden result: 5.091300, dut result: 5.091956
+IEEE 754 Format! golden result: 40a2ebed, dut result: 40a2f14e
+-------------------------D2 (          3 index)---------------------------------------
+Comparison Pass! error percent: 0.226934%, golden result: 2.256391, dut result: 2.251270
+IEEE 754 Format! golden result: 401068b5, dut result: 401014d0
+------------------------VK1 (          2 index)---------------------------------------
+Comparison Pass! error percent: 0.178089%, golden result: -2.984235, dut result: -2.978920
+IEEE 754 Format! golden result: c03efdb5, dut result: c03ea6a2
+-------------------------D3 (          2 index)---------------------------------------
+Comparison Pass! error percent: 0.228370%, golden result: 13.467202, dut result: 13.436447
+IEEE 754 Format! golden result: 415779a9, dut result: 4156fbb0
+-------------------------TK (          2 index)---------------------------------------
+Comparison Pass! error percent: 0.228400%, golden result: -0.148509, dut result: -0.148848
+IEEE 754 Format! golden result: be1812bb, dut result: be186ba6
+====================================          3 Round Householder=============================================i
+-------------------------D1 (          3 index)---------------------------------------
+Comparison Pass! error percent: 0.005352%, golden result: 3.060334, dut result: 3.060498
+IEEE 754 Format! golden result: 4043dc82, dut result: 4043df31
+-------------------------D2 (          4 index)---------------------------------------
+Comparison Pass! error percent: 0.181419%, golden result: 1.749381, dut result: 1.746207
+IEEE 754 Format! golden result: 3fdfebb7, dut result: 3fdf83b8
+------------------------VK1 (          3 index)---------------------------------------
+Comparison Pass! error percent: 0.186690%, golden result: -1.771822, dut result: -1.768514
+IEEE 754 Format! golden result: bfe2cb12, dut result: bfe25eae
+-------------------------D3 (          3 index)---------------------------------------
+Comparison Pass! error percent: 0.186176%, golden result: 6.199184, dut result: 6.187643
+IEEE 754 Format! golden result: 40c65fb8, dut result: 40c6012c
+-------------------------TK (          3 index)---------------------------------------
+Comparison Pass! error percent: 0.117963%, golden result: -0.322623, dut result: -0.322242
+IEEE 754 Format! golden result: bea52eda, dut result: bea4fcf8
+====================================          4 Round Householder=============================================i
+-------------------------D1 (          4 index)---------------------------------------
+Comparison Pass! error percent: 0.252851%, golden result: 4.705923, dut result: 4.694024
+IEEE 754 Format! golden result: 409696ec, dut result: 40963572
+-------------------------D2 (          5 index)---------------------------------------
+Comparison Pass! error percent: 0.321307%, golden result: 2.169314, dut result: 2.162344
+IEEE 754 Format! golden result: 400ad60a, dut result: 400a63d7
+------------------------VK1 (          4 index)---------------------------------------
+Comparison Pass! error percent: 0.216506%, golden result: -3.249452, dut result: -3.242416
+IEEE 754 Format! golden result: c04ff704, dut result: c04f83c0
+-------------------------D3 (          4 index)---------------------------------------
+Comparison Pass! error percent: 0.407367%, golden result: 14.098161, dut result: 14.040730
+IEEE 754 Format! golden result: 41619211, dut result: 4160a6d4
+-------------------------TK (          4 index)---------------------------------------
+Comparison Pass! error percent: 0.367155%, golden result: -0.141862, dut result: -0.142383
+IEEE 754 Format! golden result: be114466, dut result: be11ccf0
+====================================          5 Round Householder=============================================i
+-------------------------D1 (          5 index)---------------------------------------
+Comparison Pass! error percent: 0.008096%, golden result: 3.469292, dut result: 3.469012
+IEEE 754 Format! golden result: 405e08e3, dut result: 405e0449
+-------------------------D2 (          6 index)---------------------------------------
+Comparison Pass! error percent: 0.147933%, golden result: 1.862604, dut result: 1.859848
+IEEE 754 Format! golden result: 3fee69cc, dut result: 3fee0f82
+------------------------VK1 (          5 index)---------------------------------------
+Comparison Pass! error percent: 0.133958%, golden result: 1.889165, dut result: 1.886634
+IEEE 754 Format! golden result: 3ff1d027, dut result: 3ff17d3a
+-------------------------D3 (          5 index)---------------------------------------
+Comparison Pass! error percent: 0.139937%, golden result: 7.037530, dut result: 7.027682
+IEEE 754 Format! golden result: 40e13373, dut result: 40e0e2c6
+-------------------------TK (          5 index)---------------------------------------
+Comparison Pass! error percent: 0.130644%, golden result: -0.284191, dut result: -0.283819
+IEEE 754 Format! golden result: be91816e, dut result: be9150c4
+====================================          6 Round Householder=============================================i
+-------------------------D1 (          6 index)---------------------------------------
+Comparison Pass! error percent: 0.129800%, golden result: 1.837088, dut result: 1.834704
+IEEE 754 Format! golden result: 3feb25b6, dut result: 3fead793
+-------------------------D2 (          7 index)---------------------------------------
+Comparison Pass! error percent: 0.169193%, golden result: 1.355392, dut result: 1.353099
+IEEE 754 Format! golden result: 3fad7d7f, dut result: 3fad325a
+------------------------VK1 (          6 index)---------------------------------------
+Comparison Pass! error percent: 0.268347%, golden result: -1.929717, dut result: -1.924539
+IEEE 754 Format! golden result: bff700fa, dut result: bff6574b
+-------------------------D3 (          6 index)---------------------------------------
+Comparison Pass! error percent: 0.363946%, golden result: 5.231048, dut result: 5.212010
+IEEE 754 Format! golden result: 40a764bf, dut result: 40a6c8c9
+-------------------------TK (          6 index)---------------------------------------
+Comparison Pass! error percent: 0.283281%, golden result: -0.382333, dut result: -0.383416
+IEEE 754 Format! golden result: bec3c118, dut result: bec44f0e
+====================================          7 Round Householder=============================================i
+-------------------------D1 (          7 index)---------------------------------------
+Comparison Pass! error percent: 0.208289%, golden result: 2.974268, dut result: 2.968073
+IEEE 754 Format! golden result: 403e5a68, dut result: 403df4e8
+-------------------------D2 (          8 index)---------------------------------------
+Comparison Pass! error percent: 0.278294%, golden result: 1.724607, dut result: 1.719807
+IEEE 754 Format! golden result: 3fdcbfe9, dut result: 3fdc22a4
+------------------------VK1 (          7 index)---------------------------------------
+Comparison Pass! error percent: 0.242304%, golden result: -2.558215, dut result: -2.552016
+IEEE 754 Format! golden result: c023b9ca, dut result: c023543b
+-------------------------D3 (          7 index)---------------------------------------
+Comparison Pass! error percent: 0.402801%, golden result: 8.823828, dut result: 8.788285
+IEEE 754 Format! golden result: 410d2e66, dut result: 410c9cd1
+-------------------------TK (          7 index)---------------------------------------
+Comparison Pass! error percent: 0.213190%, golden result: -0.226659, dut result: -0.227142
+IEEE 754 Format! golden result: be68194c, dut result: be6897f8

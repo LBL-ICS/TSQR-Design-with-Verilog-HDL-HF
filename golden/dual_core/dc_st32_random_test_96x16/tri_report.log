@@ -1,0 +1,156 @@
+==========================================
+Dual-core Simulation
+Test case: ST32_RANDOM_TEST_96X16
+==========================================
+===============================          0 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.666254%, golden result: 4.918571, dut result: 4.885800
+===============================          1 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.431592%, golden result: 0.249789, dut result: 0.248711
+Item1   Comp Pass! error percent: 1.080325%, golden result: 5.710656, dut result: 5.648962
+===============================          2 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.030306%, golden result: 0.421668, dut result: 0.421541
+Item1   Comp Pass! error percent: 1.429642%, golden result: 0.195608, dut result: 0.192812
+Item2   Comp Pass! error percent: 0.966128%, golden result: 5.707172, dut result: 5.652034
+===============================          3 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.498294%, golden result: 0.775419, dut result: 0.771555
+Item1   Comp Pass! error percent: 1.112224%, golden result: 0.706425, dut result: 0.698568
+Item2   Comp Pass! error percent: 6.982269%, golden result: 0.076821, dut result: 0.071457
+Item3   Comp Pass! error percent: 1.142696%, golden result: 5.553854, dut result: 5.490390
+===============================          4 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.374223%, golden result: 0.877402, dut result: 0.874118
+Item1   Comp Pass! error percent: 2.103050%, golden result: 0.202027, dut result: 0.197779
+Item2   Comp Pass! error percent: 0.205765%, golden result: 0.147538, dut result: 0.147234
+Item3   Comp Pass! error percent: 1.431004%, golden result: 0.032255, dut result: 0.031793
+Item4   Comp Pass! error percent: 1.336437%, golden result: 5.611353, dut result: 5.536361
+===============================          5 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.137241%, golden result: 0.432353, dut result: 0.431759
+Item1   Comp Pass! error percent: 0.698878%, golden result: 0.415506, dut result: 0.412602
+Item2   Comp Pass! error percent: 1.626975%, golden result: 0.268423, dut result: 0.264056
+Item3   Comp Pass! error percent: 2.553056%, golden result: 0.043193, dut result: 0.044296
+Item4   Comp Pass! error percent: 2.398090%, golden result: 0.455987, dut result: 0.445052
+Item5   Comp Pass! error percent: 0.904450%, golden result: 5.367862, dut result: 5.319312
+===============================          6 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.591307%, golden result: 0.820908, dut result: 0.816054
+Item1   Comp Pass! error percent: 2.276920%, golden result: 0.035154, dut result: 0.035955
+Item2   Comp Pass! error percent: 0.458639%, golden result: 0.326791, dut result: 0.328289
+Item3   Comp Pass! error percent: 1.152398%, golden result: 0.397351, dut result: 0.392772
+Item4   Comp Pass! error percent: 2.563032%, golden result: 0.409569, dut result: 0.399072
+Item5   Comp Pass! error percent: 3.524074%, golden result: 0.028240, dut result: 0.027245
+Item6   Comp Pass! error percent: 0.916132%, golden result: 5.085549, dut result: 5.038959
+===============================          7 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.712929%, golden result: 0.225881, dut result: 0.224270
+Item1   Comp FAIL! error percent: 13.326800%, golden result: 0.013289, dut result: 0.015061
+Item2   Comp Pass! error percent: 1.133774%, golden result: 1.215946, dut result: 1.202160
+Item3   Comp Pass! error percent: 1.258111%, golden result: 0.369729, dut result: 0.365078
+Item4   Comp Pass! error percent: 7.065142%, golden result: 0.030821, dut result: 0.028643
+Item5   Comp Pass! error percent: 0.254196%, golden result: 0.638803, dut result: 0.637179
+Item6   Comp Pass! error percent: 0.690784%, golden result: 0.927966, dut result: 0.921556
+Item7   Comp Pass! error percent: 1.176029%, golden result: 5.708323, dut result: 5.641191
+===============================          8 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.767726%, golden result: 1.255171, dut result: 1.245535
+Item1   Comp Pass! error percent: 1.370213%, golden result: 0.954005, dut result: 0.940933
+Item2   Comp Pass! error percent: 0.644910%, golden result: 0.477098, dut result: 0.480175
+Item3   Comp FAIL! error percent: 14.661721%, golden result: 0.025611, dut result: 0.029366
+Item4   Comp Pass! error percent: 1.860283%, golden result: 0.547494, dut result: 0.537309
+Item5   Comp Pass! error percent: 2.113350%, golden result: 0.232845, dut result: 0.227924
+Item6   Comp Pass! error percent: 7.402139%, golden result: 0.041904, dut result: 0.038803
+Item7   Comp Pass! error percent: 1.419940%, golden result: 0.996972, dut result: 0.982815
+Item8   Comp Pass! error percent: 1.030490%, golden result: 5.245817, dut result: 5.191759
+===============================          9 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.279766%, golden result: 0.405396, dut result: 0.404261
+Item1   Comp Pass! error percent: 1.161097%, golden result: 0.462429, dut result: 0.457060
+Item2   Comp Pass! error percent: 2.550070%, golden result: 0.190139, dut result: 0.185291
+Item3   Comp Pass! error percent: 1.919406%, golden result: 0.614832, dut result: 0.603031
+Item4   Comp Pass! error percent: 1.194847%, golden result: 0.202572, dut result: 0.200152
+Item5   Comp Pass! error percent: 0.579992%, golden result: 0.374954, dut result: 0.377129
+Item6   Comp Pass! error percent: 0.806043%, golden result: 0.318890, dut result: 0.316320
+Item7   Comp Pass! error percent: 1.620263%, golden result: 0.984218, dut result: 0.968271
+Item8   Comp Pass! error percent: 1.182610%, golden result: 0.542223, dut result: 0.535811
+Item9   Comp Pass! error percent: 0.804416%, golden result: 5.642740, dut result: 5.597349
+===============================         10 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.455601%, golden result: 0.953150, dut result: 0.948807
+Item1   Comp Pass! error percent: 0.440560%, golden result: 0.072629, dut result: 0.072309
+Item2   Comp Pass! error percent: 0.650177%, golden result: 0.570903, dut result: 0.567191
+Item3   Comp Pass! error percent: 0.588781%, golden result: 0.850253, dut result: 0.845247
+Item4   Comp Pass! error percent: 2.360986%, golden result: 0.803504, dut result: 0.784533
+Item5   Comp Pass! error percent: 2.579741%, golden result: 0.244323, dut result: 0.238020
+Item6   Comp Pass! error percent: 4.988744%, golden result: 0.049527, dut result: 0.051997
+Item7   Comp Pass! error percent: 1.682511%, golden result: 0.414814, dut result: 0.407834
+Item8   Comp Pass! error percent: 0.147677%, golden result: 0.538907, dut result: 0.538111
+Item9   Comp Pass! error percent: 0.546287%, golden result: 0.177574, dut result: 0.176604
+Item10  Comp Pass! error percent: 1.076843%, golden result: 5.364427, dut result: 5.306661
+===============================         11 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.753354%, golden result: 0.473915, dut result: 0.470345
+Item1   Comp Pass! error percent: 0.085534%, golden result: 0.114075, dut result: 0.113978
+Item2   Comp Pass! error percent: 1.182541%, golden result: 0.398448, dut result: 0.393736
+Item3   Comp Pass! error percent: 1.898947%, golden result: 0.351147, dut result: 0.344479
+Item4   Comp Pass! error percent: 1.901764%, golden result: 0.532754, dut result: 0.522622
+Item5   Comp Pass! error percent: 2.319261%, golden result: 0.178867, dut result: 0.174719
+Item6   Comp Pass! error percent: 1.037223%, golden result: 0.473758, dut result: 0.468844
+Item7   Comp Pass! error percent: 1.153136%, golden result: 1.238194, dut result: 1.223916
+Item8   Comp Pass! error percent: 2.089183%, golden result: 0.346652, dut result: 0.339410
+Item9   Comp Pass! error percent: 4.444259%, golden result: 0.055750, dut result: 0.058228
+Item10  Comp Pass! error percent: 1.268643%, golden result: 0.540704, dut result: 0.533844
+Item11  Comp Pass! error percent: 1.042300%, golden result: 5.740254, dut result: 5.680424
+===============================         12 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.608488%, golden result: 0.209664, dut result: 0.210940
+Item1   Comp Pass! error percent: 1.297144%, golden result: 0.308873, dut result: 0.304867
+Item2   Comp Pass! error percent: 1.628856%, golden result: 0.252200, dut result: 0.256308
+Item3   Comp Pass! error percent: 1.689440%, golden result: 0.921938, dut result: 0.906362
+Item4   Comp Pass! error percent: 1.823998%, golden result: 0.510006, dut result: 0.500704
+Item5   Comp Pass! error percent: 0.863465%, golden result: 0.367790, dut result: 0.364614
+Item6   Comp Pass! error percent: 1.169998%, golden result: 0.465544, dut result: 0.460097
+Item7   Comp Pass! error percent: 3.531977%, golden result: 0.214613, dut result: 0.207033
+Item8   Comp Pass! error percent: 0.919401%, golden result: 0.321381, dut result: 0.318426
+Item9   Comp Pass! error percent: 3.872455%, golden result: 0.172358, dut result: 0.165684
+Item10  Comp Pass! error percent: 1.316082%, golden result: 0.521943, dut result: 0.515074
+Item11  Comp Pass! error percent: 1.969782%, golden result: 0.517190, dut result: 0.507002
+Item12  Comp Pass! error percent: 0.942016%, golden result: 5.364785, dut result: 5.314248
+===============================         13 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.649643%, golden result: 0.385074, dut result: 0.382572
+Item1   Comp Pass! error percent: 1.224068%, golden result: 1.110669, dut result: 1.097074
+Item2   Comp Pass! error percent: 0.755310%, golden result: 1.211191, dut result: 1.202042
+Item3   Comp Pass! error percent: 0.707120%, golden result: 0.806676, dut result: 0.800972
+Item4   Comp Pass! error percent: 0.275238%, golden result: 0.912525, dut result: 0.910014
+Item5   Comp Pass! error percent: 0.769672%, golden result: 0.320554, dut result: 0.323021
+Item6   Comp FAIL! error percent: 23.133282%, golden result: 0.014259, dut result: 0.017558
+Item7   Comp Pass! error percent: 1.040072%, golden result: 0.772853, dut result: 0.764815
+Item8   Comp Pass! error percent: 0.569492%, golden result: 1.035660, dut result: 1.029762
+Item9   Comp Pass! error percent: 0.551979%, golden result: 0.193987, dut result: 0.195058
+Item10  Comp Pass! error percent: 0.629184%, golden result: 0.579559, dut result: 0.575913
+Item11  Comp FAIL! error percent: 15.481592%, golden result: 0.023145, dut result: 0.026729
+Item12  Comp Pass! error percent: 1.285196%, golden result: 0.213526, dut result: 0.216270
+Item13  Comp Pass! error percent: 0.851803%, golden result: 5.223863, dut result: 5.179366
+===============================         14 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.780279%, golden result: 0.917277, dut result: 0.910120
+Item1   Comp Pass! error percent: 1.677909%, golden result: 0.229203, dut result: 0.225357
+Item2   Comp Pass! error percent: 0.992230%, golden result: 1.071686, dut result: 1.061052
+Item3   Comp Pass! error percent: 0.779561%, golden result: 0.615810, dut result: 0.611010
+Item4   Comp Pass! error percent: 1.117845%, golden result: 1.010327, dut result: 0.999033
+Item5   Comp Pass! error percent: 1.734326%, golden result: 0.447456, dut result: 0.439696
+Item6   Comp Pass! error percent: 0.514489%, golden result: 0.302264, dut result: 0.303819
+Item7   Comp Pass! error percent: 0.112841%, golden result: 0.324721, dut result: 0.324354
+Item8   Comp Pass! error percent: 0.504229%, golden result: 0.398531, dut result: 0.396522
+Item9   Comp Pass! error percent: 1.138060%, golden result: 0.313987, dut result: 0.310413
+Item10  Comp Pass! error percent: 0.297917%, golden result: 0.772955, dut result: 0.770652
+Item11  Comp Pass! error percent: 0.033767%, golden result: 0.285698, dut result: 0.285601
+Item12  Comp Pass! error percent: 0.554524%, golden result: 0.330864, dut result: 0.329029
+Item13  Comp Pass! error percent: 2.618107%, golden result: 0.282509, dut result: 0.275113
+Item14  Comp Pass! error percent: 0.951726%, golden result: 5.561612, dut result: 5.508680
+===============================         15 Column Results    ======================================
+Item0   Comp Pass! error percent: 0.250729%, golden result: 0.518336, dut result: 0.517037
+Item1   Comp Pass! error percent: 1.235819%, golden result: 0.626693, dut result: 0.618948
+Item2   Comp Pass! error percent: 2.715794%, golden result: 0.184958, dut result: 0.179935
+Item3   Comp Pass! error percent: 1.143484%, golden result: 0.592698, dut result: 0.585921
+Item4   Comp Pass! error percent: 1.051972%, golden result: 0.627628, dut result: 0.621025
+Item5   Comp Pass! error percent: 0.723494%, golden result: 0.254321, dut result: 0.252481
+Item6   Comp Pass! error percent: 1.474790%, golden result: 0.122829, dut result: 0.121018
+Item7   Comp Pass! error percent: 1.309368%, golden result: 0.787621, dut result: 0.777308
+Item8   Comp Pass! error percent: 0.874156%, golden result: 0.877293, dut result: 0.869624
+Item9   Comp Pass! error percent: 0.816996%, golden result: 0.406240, dut result: 0.402921
+Item10  Comp Pass! error percent: 0.893449%, golden result: 0.925823, dut result: 0.917551
+Item11  Comp Pass! error percent: 0.886448%, golden result: 1.223538, dut result: 1.212692
+Item12  Comp Pass! error percent: 1.256098%, golden result: 0.181775, dut result: 0.179492
+Item13  Comp Pass! error percent: 1.377497%, golden result: 0.915162, dut result: 0.902555
+Item14  Comp Pass! error percent: 2.120236%, golden result: 0.133691, dut result: 0.130856
+Item15  Comp Pass! error percent: 0.666491%, golden result: 4.526901, dut result: 4.496730

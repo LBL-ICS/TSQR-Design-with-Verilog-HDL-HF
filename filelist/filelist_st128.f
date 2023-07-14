@@ -1,0 +1,13 @@
+../dut/multi_core/define.v
+../tb/tsqr_mc_st128_tb.sv
+../dut/multi_core/tsqr_mc.v
+../dut/build_blk/hh_core.v
+../dut/build_blk/fsm.v
+../dut/build_blk/ram.v
+../dut/build_blk/binary_fp_lib.v
+../dut/build_blk/hh_datapath.v
+../dut/build_blk/axpy.v
+../dut/build_blk/ddot.v
+../dut/build_blk/hqr7.v
+../dut/build_blk/sqrt.v
+../dut/build_blk/hqr5.v
